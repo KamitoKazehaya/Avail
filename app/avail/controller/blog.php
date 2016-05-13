@@ -3,15 +3,24 @@ class blog
 {
     public function index()
     {
-        echo "blog";
+        $app = new template(ROOT.'/app/'.APP.'/views/app.php');
+        $app->set("title","News");
+        $app->set("go","News");
+        echo $app->output();
     }
     public function viewPost($id)
     {
-        echo "id: ".$id;
+        $app = new template(ROOT.'/app/'.APP.'/views/app.php');
+        $app->set("title","News");
+        $app->set("go","News : ".$id);
+        echo $app->output();
     }
      public function edit($id)
     {
-        echo "id: ".$id;
+        $app = new template(ROOT.'/app/'.APP.'/views/app.php');
+        $app->set("title","News");
+        $app->set("go","News edit : ".$id);
+        echo $app->output();
        
     }
 }

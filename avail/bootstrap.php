@@ -11,6 +11,8 @@ function autoload($class)
         '/avail/core/lib/router/',
         '/avail/core/lib/database/',
         '/app/'.APP.'/controller/',
+        '/app/'.APP.'/views/',
+        '/avail/core/lib/template/'
     );
     // Проходим по массиву папок
     foreach ($array_paths as $path) {
